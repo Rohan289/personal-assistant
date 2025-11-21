@@ -6,7 +6,7 @@
 
 [v] Setup the tools - create event tool , get event tool
 
-[] Build the Graph
+[v] Build the Graph
 
 [] Implement the tools - to connect to google calendar
 

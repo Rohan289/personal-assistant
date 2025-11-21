@@ -9,7 +9,8 @@ export const createEventTool = tool(async() => {
 {
     name : 'create-event',
     description : 'Call to create event in a calendar.',
-    schema : z.object({})
+    schema : z.object({query : z.string().describe("The query to create event in google calendar")})
+
 })
 
 export const getEventsTool = tool(async() => {
@@ -19,5 +20,7 @@ export const getEventsTool = tool(async() => {
 {
     name : 'get-events',
     description : 'Call to get events in a calendar.',
-    schema : z.object({})
+    schema : z.object({query : z.string().describe("The query to get events from google calendar")})
 })
+
+
