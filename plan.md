@@ -1,10 +1,10 @@
 # Project Plan
 
-[] Project Setup
+[v] Project Setup
 
-[] Setup LLM
+[v] Setup LLM
 
-[] Setup the tools - create event tool , get event tool
+[v] Setup the tools - create event tool , get event tool
 
 [] Build the Graph
 
