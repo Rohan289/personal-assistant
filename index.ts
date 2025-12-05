@@ -14,8 +14,7 @@ const model = new ChatGroq({
 async function callModel(state : typeof MessagesAnnotation.State) {
     const response = await model.invoke(state.messages);
     return {messages : [response]}
-}
-
+} 
 
 const toolNode = new ToolNode(tools);
 
@@ -40,7 +39,7 @@ const app = graph.compile();
 async function main() {
     const result = await app.invoke({
         messages : [
-            { role : 'user', content : 'Hi' }
+            { role : 'user', content : 'Do I have any meeting today?' }
         ]
     });
     console.log("AI : ",result.messages[result.messages.length -1]?.content);
