@@ -39,7 +39,8 @@ const app = graph.compile();
 async function main() {
     const result = await app.invoke({
         messages : [
-            { role : 'user', content : 'Do I have any meeting today?' }
+            // { role : 'user', content : 'Do I have any meeting today?' }
+            {role : 'user',content : 'Can you create a meeting with Archi(senarchi4@gmail.com) at 7pm IST today about Design discussion?'}
         ]
     });
     console.log("AI : ",result.messages[result.messages.length -1]?.content);
