@@ -45,7 +45,6 @@ async function main() {
     while(true) {
         const userInput = await rlInterface.question("You: ");
         if (userInput.toLowerCase() === 'bye' || userInput.toLowerCase() === 'quit') {
-            console.log("Exiting...");
             break;
         }
         const result = await app.invoke({

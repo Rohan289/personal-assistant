@@ -58,7 +58,6 @@ export const createEventTool = tool(async(params : CreateEventParams) => {
             }
         }
     });
-    console.log("Response from create event: ",response.data);
     return "The meeting has been created";
 }, 
 {
@@ -90,7 +89,6 @@ export const getEventsTool = tool(async(params : EventParams) => {
      * 
      */
     try{
-        console.log("Params received in getEventsTool: ",params);
         const {q,timeMin,timeMax} = params;
         const result = await calendar.events.list({
             calendarId: 'rbhowmick184@gmail.com',
